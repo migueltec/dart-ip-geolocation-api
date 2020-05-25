@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:ip_geolocation_api/src/models/geolocation_data.dart';
+import 'package:ip_geolocation_api_mtec/src/models/geolocation_data.dart';
 
 class GeolocationAPI{
     static Future<GeolocationData> getData({String query=''}) async{

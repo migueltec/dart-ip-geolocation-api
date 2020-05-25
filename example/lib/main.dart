@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:ip_geolocation_api/ip_geolocation_api.dart';
+import 'package:ip_geolocation_api_mtec/ip_geolocation_api_mtec.dart';
 
 void main() => runApp(MyApp());
 
