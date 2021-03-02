@@ -9,12 +9,12 @@ class GeolocationData{
         @required this.countryCode,
         @required this.timezone,
         @required this.ip,
-        @required this.lat,
-        @required this.lng,
         @required this.region,
         @required this.regionName,
         @required this.city,
         @required this.isp,
+        @required this.lat,
+        @required this.lng,
         @required this.zip,
     });
 
@@ -23,13 +23,13 @@ class GeolocationData{
             country: json['country'],
             countryCode: json['countryCode'],
             timezone: json['timezone'],
-            ip: json['query'],
-            lat: json['lat'],
-            lng: json['lon'],
             region: json['region'],
             regionName: json['regionName'],
             city: json['city'],
             isp: json['isp'],
+            ip: json['query'],
+            lat: json['lat'],
+            lng: json['lon'],
             zip: json['zip'],
         );
     }
@@ -38,13 +38,13 @@ class GeolocationData{
             'country': this.country,
             'countryCode': this.countryCode,
             'timezone': this.timezone,
-            'ip': this.ip,
-            'lat': this.lat,
-            'lng': this.lng,
             'region': this.region,
             'regionName': this.regionName,
             'city': this.city,
             'isp': this.isp,
+            'ip': this.ip,
+            'lat': this.lat,
+            'lng': this.lng,
             'zip': this.zip,
         };
     }
