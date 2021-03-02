@@ -1,8 +1,8 @@
 import 'package:meta/meta.dart' show required;
 
 class GeolocationData{
-    final String country, countryCode, timezone, ip;
-    final double lat, lng;
+    final String country, countryCode, timezone, ip, region, regionName, city, isp ;
+    final double lat, lng, zip;
 
     GeolocationData({
         @required this.country,
@@ -10,7 +10,12 @@ class GeolocationData{
         @required this.timezone,
         @required this.ip,
         @required this.lat,
-        @required this.lng
+        @required this.lng,
+        @required this.region,
+        @required this.regionName,
+        @required this.city,
+        @required this.isp,
+        @required this.zip,
     });
 
     factory GeolocationData.fromJson(Map<String, dynamic> json){
@@ -21,6 +26,11 @@ class GeolocationData{
             ip: json['query'],
             lat: json['lat'],
             lng: json['lon'],
+            region: json['region'],
+            regionName: json['regionName'],
+            city: json['city'],
+            isp: json['isp'],
+            zip: json['zip'],
         );
     }
     Map<String, dynamic> toJson(){
@@ -31,6 +41,11 @@ class GeolocationData{
             'ip': this.ip,
             'lat': this.lat,
             'lng': this.lng,
+            'region': this.region,
+            'regionName': this.regionName,
+            'city': this.city,
+            'isp': this.isp,
+            'zip': this.zip,
         };
     }
 }
